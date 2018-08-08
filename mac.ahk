@@ -6,14 +6,6 @@ return
 Send {End}
 return
 
-!Up::
-Send ^{Up}
-return
-
-!Down::
-Send ^{Down}
-return
-
 #Left::
 Send ^{Left}
 return
