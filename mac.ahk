@@ -88,8 +88,17 @@ return
 !f::Send ^f
 return
 
+!t::Send ^t
+return
+
 !l::Send {@}
 return 
 
 <^>!l::Send {@}
 return 
+
+CapsLock:: 
+Send (
+Send )
+Send {Left}
+return
