@@ -91,7 +91,13 @@ return
 !t::Send ^t
 return
 
-!l::Send {@}
+!l::Send ^l
+return
+
+<!l::Send {@}
+return 
+
+>!l::Send {@}
 return 
 
 <^>!l::Send {@}
