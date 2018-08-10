@@ -37,6 +37,9 @@ return
 !h::WinMinimize, A 
 return
 
+!m::WinMinimize, A 
+return
+
 !Backspace::
 Send {Shift down} 
 Send {Home} 
