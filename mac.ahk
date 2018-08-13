@@ -97,13 +97,10 @@ return
 !l::Send ^l
 return
 
-<!l::Send {@}
+>!l::Send @
 return 
 
->!l::Send {@}
-return 
-
-<^>!l::Send {@}
+<^>!l::Send @
 return 
 
 CapsLock:: 
