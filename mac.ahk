@@ -115,6 +115,18 @@ Send {}}
 Send {Left}
 return
 
+^CapsLock:: 
+Send [
+Send ]
+Send {Left}
+return
+
+!CapsLock:: 
+Send <
+Send >
+Send {Left}
+return
+
 ::mfg::
 Send Mit freundlichen Grüßen
 return
