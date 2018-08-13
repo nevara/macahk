@@ -1,4 +1,4 @@
-!Left::
+﻿!Left::
 Send {Home}
 return
 
@@ -107,4 +107,16 @@ CapsLock::
 Send (
 Send )
 Send {Left}
+return
+
+::mfg::
+Send Mit freundlichen Grüßen
+return
+
+::vg::
+Send Viele Grüße
+return
+
+::pt::
+Send Pan Theis
 return
