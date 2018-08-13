@@ -138,3 +138,7 @@ return
 ::pt::
 Send Pan Theis
 return
+
+::anrede::
+Send Sehr geehrte Damen und Herren
+return
