@@ -97,6 +97,21 @@ return
 !l::Send ^l
 return
 
+!1::Send ^1
+return
+
+!2::Send ^2
+return
+
+!3::Send ^3
+return
+
+!4::Send ^4
+return
+
+!5::Send ^5
+return
+
 >!l::Send @
 return 
 
