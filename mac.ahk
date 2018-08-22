@@ -1,8 +1,8 @@
-﻿!Left::
+﻿<!Left::
 Send {Home}
 return
 
-!Right::
+<!Right::
 Send {End}
 return
 
@@ -34,82 +34,82 @@ return
 Send +{Enter}
 return
 
-!h::WinMinimize, A 
+<!h::WinMinimize, A 
 return
 
-!m::WinMinimize, A 
+<!m::WinMinimize, A 
 return
 
-!Backspace::
+<!Backspace::
 Send {Shift down} 
 Send {Home} 
 Send {Del}
 Send {Shift up} 
 return
 
-!Del::
+<!Del::
 Send {Shift down} 
 Send {End} 
 Send {Del}
 Send {Shift up} 
 return
 
-!a::
+<!a::
 Send ^a
 return
 
-!c::
+<!c::
 Send ^c
 return
 
-!x::
+<!x::
 Send ^x
 return
 
-!v::
+<!v::
 Send ^v
 return
 
-!s::
+<!s::
 Send ^s
 return
 
-!y::
+<!y::
 Send ^y
 return
 
-!z::
+<!z::
 Send ^z
 return
 
-!q::Send !{F4}
+<!q::Send !{F4}
 return
 
-!w::Send ^{F4}
+<!w::Send ^{F4}
 return
 
-!f::Send ^f
+<!f::Send ^f
 return
 
-!t::Send ^t
+<!t::Send ^t
 return
 
-!l::Send ^l
+<!l::Send ^l
 return
 
-!1::Send ^1
+<!1::Send ^1
 return
 
-!2::Send ^2
+<!2::Send ^2
 return
 
-!3::Send ^3
+<!3::Send ^3
 return
 
-!4::Send ^4
+<!4::Send ^4
 return
 
-!5::Send ^5
+<!5::Send ^5
 return
 
 >!l::Send @
@@ -136,7 +136,7 @@ Send ]
 Send {Left}
 return
 
-!CapsLock:: 
+<!CapsLock:: 
 Send <
 Send >
 Send {Left}
