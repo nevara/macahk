@@ -153,3 +153,15 @@ return
 ::anrede::
 Send Sehr geehrte Damen und Herren
 return
+
+::ue::
+Send ü
+return
+
+::oe::
+Send ö
+return
+
+::ae::
+Send ä
+return
