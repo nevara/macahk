@@ -154,14 +154,14 @@ return
 Send Sehr geehrte Damen und Herren
 return
 
-::ue::
+:*:ue::
 Send ü
 return
 
-::oe::
+:*:oe::
 Send ö
 return
 
-::ae::
+:*:ae::
 Send ä
 return
