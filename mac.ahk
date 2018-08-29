@@ -118,10 +118,7 @@ return
 <^>!l::Send @
 return 
 
-CapsLock:: 
-Send (
-Send )
-return
+SetCapsLockState, AlwaysOff
 
 +CapsLock:: 
 Send {{}
@@ -138,6 +135,22 @@ Send <
 Send >
 return
 
+CapsLock::
+Send ()
+return
+
+#u::
+Send ü
+return
+
+:*?:oe::
+Send ö
+return
+
+:*?:ae::
+Send ä
+return
+
 ::mfg::
 Send Mit freundlichen Grüßen
 return
@@ -152,16 +165,4 @@ return
 
 ::anrede::
 Send Sehr geehrte Damen und Herren
-return
-
-:*?:ue::
-Send ü
-return
-
-:*?:oe::
-Send ö
-return
-
-:*?:ae::
-Send ä
 return
