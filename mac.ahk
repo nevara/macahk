@@ -1,4 +1,6 @@
-﻿<!Left::
+﻿#SingleInstance, Force
+
+<!Left::
 Send {Home}
 return
 
@@ -122,27 +124,6 @@ return
 <^>!l::Send @
 return 
 
-SetCapsLockState, AlwaysOff
-
-+CapsLock:: 
-Send {{}
-Send {}}
-return
-
-^CapsLock:: 
-Send [
-Send ]
-return
-
-<!CapsLock:: 
-Send <
-Send >
-return
-
-CapsLock::
-Send ()
-return
-
 #u::
 Send ü
 return
@@ -153,6 +134,28 @@ return
 
 :*?:ae::
 Send ä
+return
+
+SetCapsLockState, AlwaysOff
+
+CapsLock & a::
+Send ä
+return
+
+CapsLock & o::
+Send ö
+return
+
+CapsLock & u::
+Send ü
+return
+
+CapsLock & [::
+Send (
+return
+
+CapsLock & ]::
+Send )
 return
 
 ::mfg::
