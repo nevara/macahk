@@ -14,6 +14,14 @@ return
 Send ^{Right}
 return
 
+#Del::
+Send ^{Del}
+return
+
+#BackSpace::
+Send ^{BackSpace}
+return
+
 #+Left::
 Send ^+{Left}
 return
@@ -24,10 +32,6 @@ return
 
 #BS::
 Send ^{BS}
-return
-
-#Del::
-Send ^Del
 return
 
 #Enter::
