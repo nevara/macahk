@@ -32,6 +32,14 @@ return
 Send ^+{Right}
 return
 
+#+Down::
+Send ^+{Down}
+return
+
+#+Up::
+Send ^+{Up}
+return
+
 #BS::
 Send ^{BS}
 return
@@ -123,18 +131,6 @@ return
 
 <^>!l::Send @
 return 
-
-#u::
-Send ü
-return
-
-:*?:oe::
-Send ö
-return
-
-:*?:ae::
-Send ä
-return
 
 SetCapsLockState, AlwaysOff
 
