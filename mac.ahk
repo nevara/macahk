@@ -169,3 +169,7 @@ return
 ::anrede::
 Send Sehr geehrte Damen und Herren
 return
+
+::pan.::
+Send pan.theis@rohde-schwarz.com
+return
