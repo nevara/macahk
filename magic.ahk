@@ -1,4 +1,5 @@
-﻿;-----------------------------------------
+﻿; https://github.com/nathanpeck/autohotkey-windows-10-apple-magic-keyboard
+;-----------------------------------------
 ; Mac keyboard to Windows Key Mappings
 ;=========================================
 
@@ -24,14 +25,14 @@ SendMode Input
 RAlt & F7::SendInput {Media_Prev}
 RAlt & F8::SendInput {Media_Play_Pause}
 RAlt & F9::SendInput {Media_Next}
-F10::SendInput {Volume_Mute}
-F11::SendInput {Volume_Down}
-F12::SendInput {Volume_Up}
+F13::SendInput {Volume_Mute}
+F14::SendInput {Volume_Down}
+F15::SendInput {Volume_Up}
 
 ; F13-15, standard windows mapping
-F13::SendInput {PrintScreen}
-F14::SendInput {ScrollLock}
-F15::SendInput {Pause}
+; F13::SendInput {PrintScreen}
+; F14::SendInput {ScrollLock}
+; F15::SendInput {Pause}
 
 ; -------------------------------
 ;  Cursor Movement
@@ -46,6 +47,30 @@ F15::SendInput {Pause}
 !Right::SendInput ^{Right}
 !+Left::SendInput ^+{Left}
 !+Right::SendInput ^+{Right}
+
+; Delete actions
+
+<!Del::
+Send ^{Del}
+return
+
+<!BackSpace::
+Send ^{BackSpace}
+return
+
+#Backspace::
+Send {Shift down} 
+Send {Home} 
+Send {Del}
+Send {Shift up} 
+return
+
+#Del::
+Send {Shift down} 
+Send {End} 
+Send {Del}
+Send {Shift up} 
+return
 
 ; --------------------------------------------------------------
 ; OS X system shortcuts
@@ -68,10 +93,11 @@ F15::SendInput {Pause}
 #q::Send !{F4}
 
 ; Remap Windows + Tab to Alt + Tab.
-Lwin & Tab::AltTab
+; Lwin & Tab::AltTab
 
 ; minimize windows
 #m::WinMinimize,a
+#h::WinMinimize,a
 
 
 ; --------------------------------------------------------------
@@ -80,6 +106,7 @@ Lwin & Tab::AltTab
 
 ; Map Alt + L to @
 !l::SendInput {@}
+#+l::SendInput {@}
 
 ; Map Alt + N to \
 +!7::SendInput {\}
@@ -153,3 +180,50 @@ Lwin & Tab::AltTab
 #!u::Send ^u
 
 #IfWinActive
+
+; My personal shortcuts
+SetCapsLockState, AlwaysOff
+
+CapsLock & a::
+Send ä
+return
+
+CapsLock & o::
+Send ö
+return
+
+CapsLock & u::
+Send ü
+return
+
+CapsLock & [::
+Send (
+return
+
+CapsLock & ]::
+Send )
+return
+
+::mfg::
+Send Mit freundlichen Grüßen
+return
+
+::vg::
+Send Viele Grüße
+return
+
+::pt::
+Send Pan Theis
+return
+
+::anrede::
+Send Sehr geehrte Damen und Herren
+return
+
+::pan.::
+Send pan.theis@rohde-schwarz.com
+return
+
+::mühl::
+Send Mühldorfstraße 15, 81671 München
+return
