@@ -100,14 +100,12 @@ return
 #m::WinMinimize,a
 #h::WinMinimize,a
 
-
 ; --------------------------------------------------------------
 ; OS X keyboard mappings for special chars
 ; --------------------------------------------------------------
 
 ; Map Alt + L to @
 !l::SendInput {@}
-#+l::SendInput {@}
 
 ; Map Alt + N to \
 +!7::SendInput {\}
@@ -154,8 +152,6 @@ return
 ; Map Alt + 3 to #
 !3::SendInput {#}
 
-
-
 ; --------------------------------------------------------------
 ; Custom mappings for special chars
 ; --------------------------------------------------------------
@@ -166,6 +162,13 @@ return
 ;^ö::SendInput {{} 
 ;^ä::SendInput {}} 
 
+^ & [::
+Send (
+return
+
+^ & ]::
+Send )
+return
 
 ; --------------------------------------------------------------
 ; Application specific
@@ -183,6 +186,24 @@ return
 #IfWinActive
 
 ; My personal shortcuts
+
+#l::Send ^l
+return
+
+#1::Send ^1
+return
+
+#2::Send ^2
+return
+
+#3::Send ^3
+return
+
+#4::Send ^4
+return
+
+#5::Send ^5
+
 SetCapsLockState, AlwaysOff
 
 CapsLock & a::
