@@ -126,11 +126,9 @@ return
 <!5::Send ^5
 return
 
->!l::Send @
-return 
-
-<^>!l::Send @
-return 
+; Map Alt + L to @
+!l::SendInput {@}
+<^>!l::SendInput {@}
 
 SetCapsLockState, AlwaysOff
 

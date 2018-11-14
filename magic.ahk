@@ -106,6 +106,7 @@ return
 
 ; Map Alt + L to @
 !l::SendInput {@}
+<^>!l::SendInput {@}
 
 ; Map Alt + N to \
 +!7::SendInput {\}
