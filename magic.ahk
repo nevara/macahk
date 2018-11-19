@@ -11,23 +11,19 @@
 ; + = SHIFT
 ; # = WIN
 ;
-; Debug action snippet: MsgBox You pressed Control-A while Notepad is active.
 
-#InstallKeybdHook
 #SingleInstance, Force
-SetTitleMatchMode 2
-SendMode Input
 
 ; --------------------------------------------------------------
 ; media/function keys all mapped to the right option key
 ; --------------------------------------------------------------
 
-RAlt & F7::SendInput {Media_Prev}
-RAlt & F8::SendInput {Media_Play_Pause}
-RAlt & F9::SendInput {Media_Next}
-F13::SendInput {Volume_Mute}
-F14::SendInput {Volume_Down}
-F15::SendInput {Volume_Up}
+RAlt & F7::SendInput {Media_Prev} return
+RAlt & F8::SendInput {Media_Play_Pause} return
+RAlt & F9::SendInput {Media_Next} return
+F13::SendInput {Volume_Mute} return
+F14::SendInput {Volume_Down} return
+F15::SendInput {Volume_Up} return
 
 ; F13-15, standard windows mapping
 ; F13::SendInput {PrintScreen}
@@ -39,14 +35,14 @@ F15::SendInput {Volume_Up}
 ;
 ; cmd + arrows - start & end of lines, with shift for selecting text
 ; -------------------------------
-#Left::SendInput {Home}
-#Right::SendInput {End}
-+#Left::SendInput +{Home}
-+#Right::SendInput +{End}
-!Left::SendInput ^{Left}
-!Right::SendInput ^{Right}
-!+Left::SendInput ^+{Left}
-!+Right::SendInput ^+{Right}
+#Left::SendInput {Home} return
+#Right::SendInput {End} return
++#Left::SendInput +{Home} return
++#Right::SendInput +{End} return
+!Left::SendInput ^{Left} return
+!Right::SendInput ^{Right} return
+!+Left::SendInput ^+{Left} return
+!+Right::SendInput ^+{Right} return
 
 ; Delete actions
 
@@ -76,115 +72,29 @@ return
 ; OS X system shortcuts
 ; --------------------------------------------------------------
 
-
-#s::SendInput ^{s}
-#a::SendInput ^{a}
-#c::SendInput ^{c}
-#v::SendInput ^{v}
-#x::SendInput ^{x}
-#o::SendInput ^{o}
-#f::SendInput ^{f}
-#z::SendInput ^{z}
-#y::SendInput ^{y}
-#t::SendInput ^{t}
-#w::SendInput ^{w}
-#n::SendInput ^{n}
+#s::SendInput ^{s} return
+#a::SendInput ^{a} return
+#c::SendInput ^{c} return
+#v::SendInput ^{v} return
+#x::SendInput ^{x} return
+#o::SendInput ^{o} return
+#f::SendInput ^{f} return
+#z::SendInput ^{z} return
+#y::SendInput ^{y} return
+#t::SendInput ^{t} return
+#w::SendInput ^{w} return
+#n::SendInput ^{n} return
 
 ; Close windows (cmd + q to Alt + F4)
-#q::Send !{F4}
-
-; Remap Windows + Tab to Alt + Tab.
-; Lwin & Tab::AltTab
+#q::Send !{F4}  return
 
 ; minimize windows
-#m::WinMinimize,a
-#h::WinMinimize,a
-
-; --------------------------------------------------------------
-; OS X keyboard mappings for special chars
-; --------------------------------------------------------------
+#m::WinMinimize,a  return
+#h::WinMinimize,a  return
 
 ; Map Alt + L to @
-!l::SendInput {@}
-<^>!l::SendInput {@}
-
-; Map Alt + N to \
-+!7::SendInput {\}
-
-; Map Alt + N to ©
-!g::SendInput {©}
-
-; Map Alt + o to ø
-!o::SendInput {ø}
-
-; Map Alt + 5 to [
-!5::SendInput {[}
-
-; Map Alt + 6 to ]
-!6::SendInput {]}
-
-; Map Alt + E to €
-!e::SendInput {€}
-
-; Map Alt + - to –
-!-::SendInput {–}
-
-; Map Alt + 8 to {
-!8::SendInput {{}
-
-; Map Alt + 9 to }
-!9::SendInput {}}
-
-; Map Alt + - to ±
-!+::SendInput {±}
-
-; Map Alt + R to ®
-!r::SendInput {®}
-
-; Map Alt + N to |
-!7::SendInput {|}
-
-; Map Alt + W to ∑
-!w::SendInput {∑}
-
-; Map Alt + N to ~
-!n::SendInput {~}
-
-; Map Alt + 3 to #
-!3::SendInput {#}
-
-; --------------------------------------------------------------
-; Custom mappings for special chars
-; --------------------------------------------------------------
-
-;#ö::SendInput {[} 
-;#ä::SendInput {]} 
-
-;^ö::SendInput {{} 
-;^ä::SendInput {}} 
-
-^ & [::
-Send (
-return
-
-^ & ]::
-Send )
-return
-
-; --------------------------------------------------------------
-; Application specific
-; --------------------------------------------------------------
-
-; Google Chrome
-#IfWinActive, ahk_class Chrome_WidgetWin_1
-
-; Show Web Developer Tools with cmd + alt + i
-#!i::Send {F12}
-
-; Show source code with cmd + alt + u
-#!u::Send ^u
-
-#IfWinActive
+!l::SendInput {@} return
+<^>!l::SendInput {@} return
 
 ; My personal shortcuts
 
@@ -204,6 +114,10 @@ return
 return
 
 #5::Send ^5
+return
+
+#6::Send ^6
+return
 
 SetCapsLockState, AlwaysOff
 
