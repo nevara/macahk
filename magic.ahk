@@ -35,14 +35,14 @@ F15::SendInput {Volume_Up} return
 ;
 ; cmd + arrows - start & end of lines, with shift for selecting text
 ; -------------------------------
-#Left::SendInput {Home} return
-#Right::SendInput {End} return
-+#Left::SendInput +{Home} return
-+#Right::SendInput +{End} return
-!Left::SendInput ^{Left} return
-!Right::SendInput ^{Right} return
-!+Left::SendInput ^+{Left} return
-!+Right::SendInput ^+{Right} return
+#Left::SendInput {Home} 
+#Right::SendInput {End} 
++#Left::SendInput +{Home} 
++#Right::SendInput +{End} 
+!Left::SendInput ^{Left} 
+!Right::SendInput ^{Right} 
+!+Left::SendInput ^+{Left} 
+!+Right::SendInput ^+{Right}  
 
 ; Delete actions
 
@@ -164,3 +164,6 @@ return
 ::mühl::
 Send Mühldorfstraße 15, 81671 München
 return
+
+;#space::SendInput !{Space}
+;return
