@@ -18,12 +18,12 @@
 ; media/function keys all mapped to the right option key
 ; --------------------------------------------------------------
 
-RAlt & F7::SendInput {Media_Prev} return
-RAlt & F8::SendInput {Media_Play_Pause} return
-RAlt & F9::SendInput {Media_Next} return
-F13::SendInput {Volume_Mute} return
-F14::SendInput {Volume_Down} return
-F15::SendInput {Volume_Up} return
+RAlt & F7::SendInput {Media_Prev} 
+RAlt & F8::SendInput {Media_Play_Pause} 
+RAlt & F9::SendInput {Media_Next} 
+F13::SendInput {Volume_Mute} 
+F14::SendInput {Volume_Down} 
+F15::SendInput {Volume_Up} 
 
 ; F13-15, standard windows mapping
 ; F13::SendInput {PrintScreen}
@@ -72,29 +72,29 @@ return
 ; OS X system shortcuts
 ; --------------------------------------------------------------
 
-#s::SendInput ^{s} return
-#a::SendInput ^{a} return
-#c::SendInput ^{c} return
-#v::SendInput ^{v} return
-#x::SendInput ^{x} return
-#o::SendInput ^{o} return
-#f::SendInput ^{f} return
-#z::SendInput ^{z} return
-#y::SendInput ^{y} return
-#t::SendInput ^{t} return
-#w::SendInput ^{w} return
-#n::SendInput ^{n} return
+#s::SendInput ^{s} 
+#a::SendInput ^{a} 
+#c::SendInput ^{c} 
+#v::SendInput ^{v} 
+#x::SendInput ^{x} 
+#o::SendInput ^{o} 
+#f::SendInput ^{f} 
+#z::SendInput ^{z} 
+#y::SendInput ^{y} 
+#t::SendInput ^{t} 
+#w::SendInput ^{w} 
+#n::SendInput ^{n} 
 
 ; Close windows (cmd + q to Alt + F4)
-#q::Send !{F4}  return
+#q::Send !{F4} 
 
 ; minimize windows
-#m::WinMinimize,a  return
-#h::WinMinimize,a  return
+#m::WinMinimize,A  
+#h::WinMinimize,A 
 
 ; Map Alt + L to @
-!l::SendInput {@} return
-<^>!l::SendInput {@} return
+!l::SendInput {@}
+<^>!l::SendInput {@} 
 
 ; My personal shortcuts
 
