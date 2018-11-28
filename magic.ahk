@@ -171,3 +171,6 @@ return
 
 ;#space::SendInput !{Space}
 ;return
+
+#+t::SendInput ^+t
+return
