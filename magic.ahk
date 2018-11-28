@@ -169,8 +169,11 @@ return
 Send 😁
 return
 
-;#space::SendInput !{Space}
-;return
-
 #+t::SendInput ^+t
 return
+
+!Enter::Send +{Enter}
+return
+
+;#space::SendInput !{Space}
+;return
