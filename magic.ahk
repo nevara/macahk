@@ -84,6 +84,7 @@ return
 #t::SendInput ^{t} 
 #w::SendInput ^{w} 
 #n::SendInput ^{n} 
+#r::SendInput ^{r} 
 
 ; Close windows (cmd + q to Alt + F4)
 #q::Send !{F4} 

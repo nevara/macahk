@@ -48,6 +48,8 @@ return
 Send +{Enter}
 return
 
+#r::SendInput ^{r} 
+
 <!h::WinMinimize, A 
 return
 
