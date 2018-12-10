@@ -166,6 +166,10 @@ return
 Send Mühldorfstraße 15, 81671 München
 return
 
+::personal#::
+Send 59662
+return
+
 ::haha::
 Send 😁
 return
