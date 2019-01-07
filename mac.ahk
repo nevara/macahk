@@ -1,4 +1,9 @@
-﻿#SingleInstance, Force
+﻿; ! = ALT
+; ^ = CTRL
+; + = SHIFT
+; # = WIN
+
+#SingleInstance, Force
 
 <!Left::
 Send {Home}
@@ -176,8 +181,16 @@ return
 Send pan.theis@rohde-schwarz.com
 return
 
-::Mühl::
+::mühl::
 Send Mühldorfstraße 15, 81671 München
+return
+
+::personal#::
+Send 59662
+return
+
+::rohde::
+Send Rohde & Schwarz
 return
 
 ::haha::
