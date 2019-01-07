@@ -115,6 +115,9 @@ return
 <!t::Send ^t
 return
 
+<!r::Send ^r
+return
+
 <!l::Send ^l
 return
 
