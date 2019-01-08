@@ -143,7 +143,7 @@ return
 return
 
 <!Space::
-Send #s
+Send ^{Esc}
 return
 
 SetCapsLockState, AlwaysOff
