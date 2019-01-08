@@ -142,6 +142,10 @@ return
 <^>!l::SendInput {@}
 return
 
+<!Space::
+Send #s
+return
+
 SetCapsLockState, AlwaysOff
 
 CapsLock & a::
