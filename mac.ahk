@@ -103,11 +103,11 @@ return
 Send ^z
 return
 
-<!q::Send !{F4}
-return
+; <!q::Send !{F4}
+; return
 
-<!w::Send ^{F4}
-return
+; <!w::Send ^{F4}
+; return
 
 <!f::Send ^f
 return
@@ -184,7 +184,7 @@ return
 Send Sehr geehrte Damen und Herren
 return
 
-::@@::
+::email@::
 Send pan.theis@rohde-schwarz.com
 return
 
@@ -194,10 +194,6 @@ return
 
 ::personal#::
 Send 59662
-return
-
-::rohde::
-Send Rohde & Schwarz
 return
 
 ::haha::
