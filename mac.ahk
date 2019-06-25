@@ -103,11 +103,11 @@ return
 Send ^z
 return
 
-; <!q::Send !{F4}
-; return
+<!q::Send !{F4}
+return
 
-; <!w::Send ^{F4}
-; return
+<!w::Send ^{F4}
+return
 
 <!f::Send ^f
 return
@@ -184,7 +184,7 @@ return
 Send Sehr geehrte Damen und Herren
 return
 
-::email@::
+::email::
 Send pan.theis@rohde-schwarz.com
 return
 
@@ -196,6 +196,46 @@ return
 Send 59662
 return
 
-::haha::
+::{:}D::
 Send 😁
+return
+
+::haha::
+Send 😄
+return
+
+:hihi:
+Send 😁
+return
+
+:hehe:
+Send 😏
+return
+
+:meh:
+Send 😒
+return
+
+::tu::
+Send 👍
+return
+
+::lol::
+Send 😄
+return
+
+::rofl::
+Send 🤣
+return
+
+::facepalm::
+Send 🤦‍♂️
+return
+
+::omg::
+Send 😱
+return
+
+::shit::
+Send 💩
 return
