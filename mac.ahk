@@ -25,6 +25,14 @@ return
 Send ^{Right}
 return
 
+#Down::
+Send ^{Down}
+return
+
+#Up::
+Send ^{Up}
+return
+
 #Del::
 Send ^{Del}
 return
