@@ -3,7 +3,7 @@
 ; + = SHIFT
 ; # = WIN
 
-; #usehook	
+#usehook	
 #SingleInstance, Force
 
 $LAlt::LWin 
@@ -233,3 +233,6 @@ return
 Send 💩
 return
 
+::at::
+Send @
+return
