@@ -9,6 +9,15 @@
 $LAlt::LWin 
 $LWin::LAlt
 
+!#Tab::Send #{Tab}
+return
+
+^!l::Send @
+return  
+
+!#l::Send ^l
+return
+
 !Left::
 Send {Home}
 return
@@ -124,9 +133,6 @@ return
 
 !t::Send ^t
 return
-
-^!l::Send @
-return  
 
 !r::Send ^r
 return
