@@ -3,20 +3,25 @@
 ; + = SHIFT
 ; # = WIN
 
-#usehook	
 #SingleInstance, Force
 
-$LAlt::LWin 
-$LWin::LAlt
+;$LWin::LAlt 
+;$LAlt::LWin 
 
+#usehook	
 !#Tab::Send #{Tab}
 return
 
-^!l::Send @
-return  
-
-!#l::Send ^l
+<!Space::
+Send #s
 return
+
+^!Space::
+Send #s
+return
+
+<!l::Send ^l
+return  
 
 !Left::
 Send {Home}
@@ -122,10 +127,10 @@ return
 Send ^z
 return
 
-!q::Send !{F4}
+#q::Send !{F4}
 return
 
-!w::Send ^{F4}
+#w::Send ^{F4}
 return
 
 !f::Send ^f
@@ -186,11 +191,11 @@ return
 Send Pan Theis
 return
 
-::anrede::
 Send Sehr geehrte Damen und Herren
+::anrede::
 return
 
-::email::
+::pan.theis@r::
 Send pan.theis@rohde-schwarz.com
 return
 
