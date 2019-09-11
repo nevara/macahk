@@ -5,18 +5,14 @@
 
 #SingleInstance, Force
 
-;$LWin::LAlt 
+;$LWin::LAlt
 ;$LAlt::LWin 
 
 #usehook	
 !#Tab::Send #{Tab}
 return
 
-<!Space::
-Send #s
-return
-
-^!Space::
+<#Space::s
 Send #s
 return
 
@@ -29,54 +25,6 @@ return
 
 !Right::
 Send {End}
-return
-
-#Left::
-Send ^{Left}
-return
-
-#Right::
-Send ^{Right}
-return
-
-#Down::
-Send ^{Down}
-return
-
-#Up::
-Send ^{Up}
-return
-
-#Del::
-Send ^{Del}
-return
-
-#BackSpace::
-Send ^{BackSpace}
-return
-
-#+Left::
-Send ^+{Left}
-return
-
-#+Right::
-Send ^+{Right}
-return
-
-#+Down::
-Send ^+{Down}
-return
-
-#+Up::
-Send ^+{Up}
-return
-
-#BS::
-Send ^{BS}
-return
-
-#Enter::
-Send +{Enter}
 return
 
 !h::WinMinimize, A 
@@ -203,7 +151,7 @@ return
 Send Mühldorfstraße 15, 81671 München
 return
 
-::personal#::
+::59::
 Send 59662
 return
 
