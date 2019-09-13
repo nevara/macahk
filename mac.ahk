@@ -9,28 +9,32 @@
 ;$LAlt::LWin 
 
 #usehook	
-!#Tab::Send #{Tab}
-return
-
-<#Space::s
+<#Space::
 Send #s
 return
+
+<!Space::
+Send #s
+return
+
+; #Tab::
+; return
 
 <!l::Send ^l
 return  
 
-!Left::
+<!Left::
 Send {Home}
 return
 
-!Right::
+<!Right::
 Send {End}
 return
 
-!h::WinMinimize, A 
+<!h::WinMinimize, A 
 return
 
-!m::WinMinimize, A 
+<#h::WinMinimize, A 
 return
 
 !Backspace::
@@ -61,10 +65,6 @@ return
 
 !v::
 Send ^v
-return
-
-!s::
-Send ^s
 return
 
 !y::
@@ -193,8 +193,4 @@ return
 
 ::shit::
 Send 💩
-return
-
-::at::
-Send @
 return
