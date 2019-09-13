@@ -1,83 +1,40 @@
-﻿; ! = ALT
+; ! = ALT
 ; ^ = CTRL
 ; + = SHIFT
 ; # = WIN
 
-#usehook	
 #SingleInstance, Force
 
-$LAlt::LWin 
-$LWin::LAlt
+;$LWin::LAlt
+;$LAlt::LWin 
 
-!#Tab::Send #{Tab}
+#usehook	
+<#Space::
+Send #s
 return
 
-^!l::Send @
+<!Space::
+Send #s
+return
+
+#Tab::
+return
+
+<!l::Send ^l
 return  
 
-!#l::Send ^l
-return
-
-!Left::
+<!Left::
 Send {Home}
 return
 
-!Right::
+<!Right::
 Send {End}
 return
 
-#Left::
-Send ^{Left}
+<!h::WinMinimize, A 
 return
 
-#Right::
-Send ^{Right}
-return
-
-#Down::
-Send ^{Down}
-return
-
-#Up::
-Send ^{Up}
-return
-
-#Del::
-Send ^{Del}
-return
-
-#BackSpace::
-Send ^{BackSpace}
-return
-
-#+Left::
-Send ^+{Left}
-return
-
-#+Right::
-Send ^+{Right}
-return
-
-#+Down::
-Send ^+{Down}
-return
-
-#+Up::
-Send ^+{Up}
-return
-
-#BS::
-Send ^{BS}
-return
-
-#Enter::
-Send +{Enter}
-return
-
-!h::WinMinimize, A 
-return
-
-!m::WinMinimize, A 
+<#h::WinMinimize, A 
 return
 
 !Backspace::
@@ -110,10 +67,6 @@ return
 Send ^v
 return
 
-!s::
-Send ^s
-return
-
 !y::
 Send ^y
 return
@@ -122,10 +75,10 @@ return
 Send ^z
 return
 
-!q::Send !{F4}
+#q::Send !{F4}
 return
 
-!w::Send ^{F4}
+#w::Send ^{F4}
 return
 
 !f::Send ^f
@@ -186,11 +139,11 @@ return
 Send Pan Theis
 return
 
-::anrede::
 Send Sehr geehrte Damen und Herren
+::anrede::
 return
 
-::email::
+::pan.theis@r::
 Send pan.theis@rohde-schwarz.com
 return
 
@@ -198,7 +151,7 @@ return
 Send Mühldorfstraße 15, 81671 München
 return
 
-::personal#::
+::59::
 Send 59662
 return
 
@@ -240,8 +193,4 @@ return
 
 ::shit::
 Send 💩
-return
-
-::at::
-Send @
 return
