@@ -17,8 +17,8 @@ return
 Send #s
 return
 
-; #Tab::
-; return
+#Tab::
+return
 
 <!l::Send ^l
 return  
