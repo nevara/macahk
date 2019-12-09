@@ -9,16 +9,16 @@
 ;$LAlt::LWin 
 
 #usehook	
-<#Space::
-Send #s
-return
+; <#Space::
+; Send #s
+; return
 
 <!Space::
 Send #s
 return
 
-#Tab::
-return
+; #Tab::
+; return
 
 <!l::Send ^l
 return  
@@ -75,10 +75,14 @@ return
 Send ^z
 return
 
-#q::Send !{F4}
+!s::
+Send ^s
 return
 
-#w::Send ^{F4}
+!q::Send !{F4}
+return
+
+!w::Send ^{F4}
 return
 
 !f::Send ^f
