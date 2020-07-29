@@ -9,13 +9,10 @@
 ;$LAlt::LWin 
 
 #usehook	
-; <#Space::
+
+; <!Space::
 ; Send #s
 ; return
-
-<!Space::
-Send #s
-return
 
 ; #Tab::
 ; return
@@ -147,7 +144,7 @@ Send Sehr geehrte Damen und Herren
 ::anrede::
 return
 
-::pan.theis@r::
+::@@::
 Send pan.theis@rohde-schwarz.com
 return
 
