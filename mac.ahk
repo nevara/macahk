@@ -195,3 +195,16 @@ return
 ::shit::
 Send 💩
 return
+
+::ur::
+Send /ur/
+return
+
+::cr::
+Send /cr/
+return
+
+::cc::
+Send /cc/
+return
+
