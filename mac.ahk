@@ -17,6 +17,10 @@
 ; #Tab::
 ; return
 
+#v::
+Send ^+v
+return
+
 <!l::Send ^l
 return  
 
