@@ -106,6 +106,64 @@ return
 !5::Send ^5
 return
 
+<^>!a::
+Send ^a
+return
+
+<^>!c::
+Send ^c
+return
+
+<^>!x::
+Send ^x
+return
+
+<^>!v::
+Send ^v
+return
+
+<^>!y::
+Send ^y
+return
+
+<^>!z::
+Send ^z
+return
+
+<^>!s::
+Send ^s
+return
+
+<^>!q::Send !{F4}
+return
+
+<^>!w::Send ^{F4}
+return
+
+<^>!f::Send ^f
+return
+
+<^>!t::Send ^t
+return
+
+<^>!r::Send ^r
+return
+
+<^>!1::Send ^1
+return
+
+<^>!2::Send ^2
+return
+
+<^>!3::Send ^3
+return
+
+<^>!4::Send ^4
+return
+
+<^>!5::Send ^5
+return
+
 SetCapsLockState, AlwaysOff
 
 CapsLock & a::
