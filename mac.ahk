@@ -24,6 +24,10 @@ return
 <!l::Send ^l
 return  
 
+CapsLock::
+Send @
+return
+
 <!Left::
 Send {Home}
 return
