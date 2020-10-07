@@ -17,9 +17,9 @@
 ; #Tab::
 ; return
 
-#v::
-Send ^+v
-return
+; #v::
+; Send ^+v
+; return
 
 <!l::Send ^l
 return  
@@ -258,8 +258,20 @@ return
 Send 😱
 return
 
+:::P::
+Send 😛
+return
+
+::;P::
+Send 😜
+return
+
 ::shit::
 Send 💩
+return
+
+::shrug::
+Send 🤷🏿‍♂️
 return
 
 ::ur::
