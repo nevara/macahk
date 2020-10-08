@@ -270,6 +270,10 @@ return
 Send 💩
 return
 
+::kacke::
+Send 💩
+return
+
 ::shrug::
 Send 🤷🏿‍♂️
 return
