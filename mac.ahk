@@ -274,6 +274,10 @@ return
 Send 💩
 return
 
+::ka::
+Send 🤷🏿‍♂️
+return
+
 ::shrug::
 Send 🤷🏿‍♂️
 return
