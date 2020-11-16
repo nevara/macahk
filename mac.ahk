@@ -84,10 +84,13 @@ return
 Send ^s
 return
 
-!q::Send !{F4}
+<^p::Send <^>!q
 return
 
-!w::Send ^{F4}
+<!q::Send !{F4}
+return
+
+<!w::Send ^{F4}
 return
 
 !f::Send ^f
