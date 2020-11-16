@@ -84,7 +84,7 @@ return
 Send ^s
 return
 
-<^p::Send <^>!q
+<^p::Send ^>!q
 return
 
 <!q::Send !{F4}
