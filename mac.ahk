@@ -42,6 +42,12 @@ return
 <#h::WinMinimize, A 
 return
 
+<!m::WinMinimize, A 
+return
+
+<#m::WinMinimize, A 
+return
+
 !Backspace::
 Send {Shift down} 
 Send {Home} 
@@ -82,9 +88,6 @@ return
 
 !s::
 Send ^s
-return
-
-<^p::Send ^>!q
 return
 
 <!q::Send !{F4}
@@ -143,12 +146,6 @@ return
 
 <^>!s::
 Send ^s
-return
-
-<^>!q::Send !{F4}
-return
-
-<^>!w::Send ^{F4}
 return
 
 <^>!f::Send ^f
